@@ -1,6 +1,9 @@
 :- use_module(library(http/json)).
 
+read_json_to_dict('-', Output) :-
+    json_read_dict(user_input, Output).
 read_json_to_dict(File, Output) :-
+    \+ File = '-',
     open(File, read, Out),
     json_read_dict(Out, Output),
     close(Out).
