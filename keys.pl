@@ -15,7 +15,7 @@ flatten_key_path(Dict, [Key|Child]) :-
 flatten_key_path(Dict, []) :-
     \+ is_dict(Dict).
 
-execute :-
+'__execute' :-
     current_prolog_flag(argv, [_, File]),
     read_json_to_dict(File, Json),
     !,

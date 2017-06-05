@@ -15,4 +15,4 @@ go :-
 run :-
     current_prolog_flag(argv, [File|_]),
     consult(File),
-    execute.
+    '__execute'.

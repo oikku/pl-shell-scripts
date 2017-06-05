@@ -10,7 +10,7 @@ Run keys.pl script
 
 ## Writing scripts
 
-run.pl script assumes that there exists execute/0 predicate in file given
+run.pl script assumes that there exists __execute/0 predicate in file given
 as first parameter to run.pl script. After script is loaded then execute
 predicate is called.
 
